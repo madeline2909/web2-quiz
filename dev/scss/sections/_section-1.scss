@@ -1,3 +1,22 @@
 /* =============
     section-1
 ============= */
+#section-1{
+    background-image: url('../img/section-1/hero1.jpg');
+    background-position: center;
+    background-position: -250px 0;
+    background-size: cover;
+    height: 600px;
+
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas:
+    ". content .";
+    #section-1-container{
+        grid-area: content;
+        text-align: center;
+        >h1{
+            padding-top: 100px;
+        }
+    }
+}

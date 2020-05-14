@@ -1,3 +1,25 @@
 /* =============
     section-2
 ============= */
+#section-2{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas:
+    ". content ."
+    "img img img";
+    #section-2-container{
+        margin-bottom: 100px;
+        grid-area: content;
+        h1{
+            text-align: center;
+        }
+    }
+    #section-2-img{
+        grid-area: img;
+        background-image: url('../img/section-2/hero2.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 350px;
+    }
+    }
+    

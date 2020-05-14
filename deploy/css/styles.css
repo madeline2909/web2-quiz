@@ -353,8 +353,58 @@ template {
     Base
 ============= */
 /* =============
+    Base
+============= */
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.content-spacing {
+  margin-top: 45px;
+}
+@media (min-width: 768px) {
+  .content-spacing {
+    margin-top: 42px;
+  }
+}
+@media (min-width: 992px) {
+  .content-spacing {
+    margin: 70px 0;
+  }
+}
+
+/* =============
     Typography
 ============= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body p, body h5 {
+  font-family: "Lato", sans-serif;
+}
+body h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#section-1 {
+  font-family: "Comfortaa", cursive;
+}
+#section-1 h1 {
+  font-family: "Comfortaa", cursive;
+}
+
 /* =============
     Buttons
 ============= */
@@ -385,12 +435,118 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #000;
+  padding: 45px 0 50px;
+  text-align: center;
+  color: white;
+}
+footer #footer-content ul {
+  padding: 0 70px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer #footer-content ul li a:link, footer #footer-content ul li a:visited {
+  color: #EEEEEE;
+  transition: 0.25s;
+  font-size: 1.875rem;
+}
+footer #footer-content ul li a:hover, footer #footer-content ul li a:active {
+  color: #fff;
+}
+
 /* =============
     section-1
 ============= */
+#section-1 {
+  background-image: url("../img/section-1/hero1.jpg");
+  background-position: center;
+  background-position: -250px 0;
+  background-size: cover;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". content .";
+}
+#section-1 #section-1-container {
+  grid-area: content;
+  text-align: center;
+}
+#section-1 #section-1-container > h1 {
+  padding-top: 100px;
+}
+
 /* =============
     section-2
 ============= */
+#section-2 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". content ." "img img img";
+}
+#section-2 #section-2-container {
+  margin-bottom: 100px;
+  grid-area: content;
+}
+#section-2 #section-2-container h1 {
+  text-align: center;
+}
+#section-2 #section-2-img {
+  grid-area: img;
+  background-image: url("../img/section-2/hero2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+}
+
 /* =============
     section-3
 ============= */
+#section-3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". content ." ". img .";
+}
+#section-3 #section-3-container {
+  grid-area: content;
+}
+#section-3 #section-3-container h1 {
+  text-align: center;
+}
+#section-3 #section-3-container li {
+  background-color: #EEEEEE;
+  margin-bottom: 20px;
+}
+#section-3 #section-3-container li > h1 {
+  padding-top: 20px;
+}
+#section-3 #section-3-container li p {
+  padding: 20px;
+}
+#section-3 #section-3-container li h5 {
+  padding: 0 0 20px 20px;
+}
+#section-3 #section-3-container #card1-img {
+  background-image: url("../img/section-3/card1.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  grid-area: img;
+}
+#section-3 #section-3-container #card2-img {
+  background-image: url("../img/section-3/card2.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  grid-area: img;
+}
+#section-3 #section-3-container #card3-img {
+  background-image: url("../img/section-3/card3.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  grid-area: img;
+}

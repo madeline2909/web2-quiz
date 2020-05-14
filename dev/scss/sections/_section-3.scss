@@ -1,3 +1,54 @@
 /* =============
     section-3
 ============= */
+#section-3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas:
+    ". content ."
+    ". img .";
+
+    #section-3-container{
+        grid-area: content;
+        h1{
+            text-align: center;
+        }
+        li{
+            background-color: $gray;
+            margin-bottom: 20px;
+            >h1{
+                padding-top: 20px;
+            }
+            p{
+                padding: 20px;
+            }
+            h5{
+                padding: 0 0 20px 20px;
+            }
+        }
+        #card1-img{
+            background-image: url('../img/section-3/card1.jpeg');
+            background-position: center;
+            background-size: cover;
+            height: 200px;
+            grid-area: img;
+        }
+        #card2-img{
+            background-image: url('../img/section-3/card2.jpeg');
+            background-position: center;
+            background-size: cover;
+            height: 200px;
+            grid-area: img;
+        }
+        #card3-img{
+            background-image: url('../img/section-3/card3.jpeg');
+            background-position: center;
+            background-size: cover;
+            height: 200px;
+            grid-area: img;
+        }
+        
+        
+    }
+}
