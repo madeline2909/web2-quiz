@@ -1,34 +1,37 @@
 /* =============
     Footer
 ============= */
-footer{
+footer {
     background-color: $black;
+    color: white;
     padding: 45px 0 50px;
     text-align: center;
-    color: white;
 
-    #footer-content{
-        ul{
-            padding: 0 70px;
-            display: flex;
-            justify-content: center;
-            justify-content: space-evenly;
+    #footer-content {
+        ul {
             align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0 70px;
 
-            li{
-                a:link, a:visited{
+            @include md {
+                padding: 0 280px;
+            }
+
+            li {
+
+                a:link,
+                a:visited {
                     color: $gray;
-                    transition: 0.25s;
                     font-size: rem-calc(30);
+                    transition: 0.25s;
                 }
 
-                a:hover, a:active{
+                a:hover,
+                a:active {
                     color: $white;
                 }
             }
         }
-        
     }
-    
-
 }

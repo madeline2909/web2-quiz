@@ -2,17 +2,27 @@
     section-2
 ============= */
 #section-2 {
-    display: grid;
-    grid-template-areas: ". content ."
-        "img img img";
-    grid-template-columns: 15px auto 15px;
+    @include md {
+        display: grid;
+        grid-template-areas: "content img";
+        grid-template-columns: auto 40%;
+    }
 
     #section-2-container {
+        background-color: $gray;
         grid-area: content;
-        margin-bottom: 100px;
+        padding: 0 15px 100px 15px;
+
+        @include md {
+            padding: 0 20px 0px 40px;
+        }
 
         h1 {
             text-align: center;
+
+            @include md {
+                text-align: left;
+            }
         }
     }
 
@@ -22,5 +32,9 @@
         background-size: cover;
         grid-area: img;
         height: 350px;
+
+        @include md {
+            height: 250px;
+        }
     }
 }

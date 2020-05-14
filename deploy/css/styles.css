@@ -364,16 +364,16 @@ ul li {
 }
 
 .content-spacing {
-  margin-top: 45px;
+  padding-top: 45px;
 }
 @media (min-width: 768px) {
   .content-spacing {
-    margin-top: 42px;
+    padding-top: 42px;
   }
 }
 @media (min-width: 992px) {
   .content-spacing {
-    margin: 70px 0;
+    padding: 70px 0;
   }
 }
 
@@ -437,23 +437,29 @@ textarea {
 ============= */
 footer {
   background-color: #000;
+  color: white;
   padding: 45px 0 50px;
   text-align: center;
-  color: white;
 }
 footer #footer-content ul {
-  padding: 0 70px;
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
   align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 70px;
 }
-footer #footer-content ul li a:link, footer #footer-content ul li a:visited {
+@media (min-width: 768px) {
+  footer #footer-content ul {
+    padding: 0 280px;
+  }
+}
+footer #footer-content ul li a:link,
+footer #footer-content ul li a:visited {
   color: #EEEEEE;
-  transition: 0.25s;
   font-size: 1.875rem;
+  transition: 0.25s;
 }
-footer #footer-content ul li a:hover, footer #footer-content ul li a:active {
+footer #footer-content ul li a:hover,
+footer #footer-content ul li a:active {
   color: #fff;
 }
 
@@ -469,6 +475,11 @@ footer #footer-content ul li a:hover, footer #footer-content ul li a:active {
   grid-template-columns: 15px auto 15px;
   height: 600px;
 }
+@media (min-width: 768px) {
+  #section-1 {
+    background-position: -100px 0;
+  }
+}
 #section-1 #section-1-container {
   grid-area: content;
   text-align: center;
@@ -476,21 +487,39 @@ footer #footer-content ul li a:hover, footer #footer-content ul li a:active {
 #section-1 #section-1-container > h1 {
   padding-top: 100px;
 }
+@media (min-width: 768px) {
+  #section-1 #section-1-container {
+    margin: 0 120px;
+  }
+}
 
 /* =============
     section-2
 ============= */
-#section-2 {
-  display: grid;
-  grid-template-areas: ". content ." "img img img";
-  grid-template-columns: 15px auto 15px;
+@media (min-width: 768px) {
+  #section-2 {
+    display: grid;
+    grid-template-areas: "content img";
+    grid-template-columns: auto 40%;
+  }
 }
 #section-2 #section-2-container {
+  background-color: #EEEEEE;
   grid-area: content;
-  margin-bottom: 100px;
+  padding: 0 15px 100px 15px;
+}
+@media (min-width: 768px) {
+  #section-2 #section-2-container {
+    padding: 0 20px 0px 40px;
+  }
 }
 #section-2 #section-2-container h1 {
   text-align: center;
+}
+@media (min-width: 768px) {
+  #section-2 #section-2-container h1 {
+    text-align: left;
+  }
 }
 #section-2 #section-2-img {
   background-image: url("../img/section-2/hero2.jpg");
@@ -498,6 +527,11 @@ footer #footer-content ul li a:hover, footer #footer-content ul li a:active {
   background-size: cover;
   grid-area: img;
   height: 350px;
+}
+@media (min-width: 768px) {
+  #section-2 #section-2-img {
+    height: 250px;
+  }
 }
 
 /* =============
@@ -509,40 +543,50 @@ footer #footer-content ul li a:hover, footer #footer-content ul li a:active {
   grid-template-columns: 15px auto 15px;
   width: 100%;
 }
-#section-3 #section-3-container {
+
+#section-3-container {
   grid-area: content;
 }
-#section-3 #section-3-container h1 {
+#section-3-container h1 {
   text-align: center;
 }
-#section-3 #section-3-container li {
+#section-3-container ul li {
   background-color: #EEEEEE;
   margin-bottom: 20px;
 }
-#section-3 #section-3-container li > h1 {
+#section-3-container ul li > h1 {
   padding-top: 20px;
 }
-#section-3 #section-3-container li p {
+#section-3-container ul li p {
   padding: 20px;
 }
-#section-3 #section-3-container li h5 {
+#section-3-container ul li h5 {
   padding: 0 0 20px 20px;
 }
-#section-3 #section-3-container #card1-img {
+@media (min-width: 768px) {
+  #section-3-container ul {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 30px;
+  }
+}
+#section-3-container #card1-img {
   background-image: url("../img/section-3/card1.jpeg");
   background-position: center;
   background-size: cover;
   grid-area: img;
   height: 200px;
 }
-#section-3 #section-3-container #card2-img {
+#section-3-container #card2-img {
   background-image: url("../img/section-3/card2.jpeg");
   background-position: center;
   background-size: cover;
   grid-area: img;
   height: 200px;
 }
-#section-3 #section-3-container #card3-img {
+#section-3-container #card3-img {
   background-image: url("../img/section-3/card3.jpeg");
   background-position: center;
   background-size: cover;

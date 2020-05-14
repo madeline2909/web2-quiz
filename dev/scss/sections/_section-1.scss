@@ -10,12 +10,20 @@
     grid-template-columns: 15px auto 15px;
     height: 600px;
 
+    @include md {
+        background-position: -100px 0;
+    }
+
     #section-1-container {
         grid-area: content;
         text-align: center;
 
         >h1 {
             padding-top: 100px;
+        }
+
+        @include md {
+            margin: 0 120px;
         }
     }
 }
