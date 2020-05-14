@@ -1,25 +1,26 @@
 /* =============
     section-2
 ============= */
-#section-2{
+#section-2 {
     display: grid;
+    grid-template-areas: ". content ."
+        "img img img";
     grid-template-columns: 15px auto 15px;
-    grid-template-areas:
-    ". content ."
-    "img img img";
-    #section-2-container{
-        margin-bottom: 100px;
+
+    #section-2-container {
         grid-area: content;
-        h1{
+        margin-bottom: 100px;
+
+        h1 {
             text-align: center;
         }
     }
-    #section-2-img{
-        grid-area: img;
+
+    #section-2-img {
         background-image: url('../img/section-2/hero2.jpg');
         background-position: center;
         background-size: cover;
+        grid-area: img;
         height: 350px;
     }
-    }
-    
+}

@@ -462,13 +462,12 @@ footer #footer-content ul li a:hover, footer #footer-content ul li a:active {
 ============= */
 #section-1 {
   background-image: url("../img/section-1/hero1.jpg");
-  background-position: center;
   background-position: -250px 0;
   background-size: cover;
-  height: 600px;
   display: grid;
-  grid-template-columns: 15px auto 15px;
   grid-template-areas: ". content .";
+  grid-template-columns: 15px auto 15px;
+  height: 600px;
 }
 #section-1 #section-1-container {
   grid-area: content;
@@ -483,21 +482,21 @@ footer #footer-content ul li a:hover, footer #footer-content ul li a:active {
 ============= */
 #section-2 {
   display: grid;
-  grid-template-columns: 15px auto 15px;
   grid-template-areas: ". content ." "img img img";
+  grid-template-columns: 15px auto 15px;
 }
 #section-2 #section-2-container {
-  margin-bottom: 100px;
   grid-area: content;
+  margin-bottom: 100px;
 }
 #section-2 #section-2-container h1 {
   text-align: center;
 }
 #section-2 #section-2-img {
-  grid-area: img;
   background-image: url("../img/section-2/hero2.jpg");
   background-position: center;
   background-size: cover;
+  grid-area: img;
   height: 350px;
 }
 
@@ -505,10 +504,10 @@ footer #footer-content ul li a:hover, footer #footer-content ul li a:active {
     section-3
 ============= */
 #section-3 {
-  width: 100%;
   display: grid;
-  grid-template-columns: 15px auto 15px;
   grid-template-areas: ". content ." ". img .";
+  grid-template-columns: 15px auto 15px;
+  width: 100%;
 }
 #section-3 #section-3-container {
   grid-area: content;
@@ -533,20 +532,20 @@ footer #footer-content ul li a:hover, footer #footer-content ul li a:active {
   background-image: url("../img/section-3/card1.jpeg");
   background-position: center;
   background-size: cover;
-  height: 200px;
   grid-area: img;
+  height: 200px;
 }
 #section-3 #section-3-container #card2-img {
   background-image: url("../img/section-3/card2.jpeg");
   background-position: center;
   background-size: cover;
-  height: 200px;
   grid-area: img;
+  height: 200px;
 }
 #section-3 #section-3-container #card3-img {
   background-image: url("../img/section-3/card3.jpeg");
   background-position: center;
   background-size: cover;
-  height: 200px;
   grid-area: img;
+  height: 200px;
 }
