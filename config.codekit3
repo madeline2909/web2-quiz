@@ -14,7 +14,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/deploy/css/styles-min.css",
 		"oF": 0,
 		"oS": 3
@@ -101,13 +101,21 @@
 		"oAP": "/design/content-quiz.sketch",
 		"oF": 0
 		},
-	"/dev/index.kit": {
+	"/dev/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/index.html",
-		"oF": 0
+		"oAP": "/dev/footer.html",
+		"oF": 1
+		},
+	"/dev/index.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/index.html",
+		"oF": 3
 		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
@@ -263,7 +271,7 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/scss/styles.scss": {
+	"/dev/scss/sections/_section-2.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -271,8 +279,34 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/styles.css",
+		"oAP": "/dev/scss/sections/_section-2.css",
 		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_section-3.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-3.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/styles.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/deploy/css/styles.css",
+		"oF": 3,
 		"oS": 0,
 		"sct": 0
 		},
@@ -283,6 +317,22 @@
 		"oA": 1,
 		"oAP": "/dev/section-1.html",
 		"oF": 0
+		},
+	"/dev/section-2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/section-2.html",
+		"oF": 1
+		},
+	"/dev/section-3.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/section-3.html",
+		"oF": 1
 		}
 	},
 "hooks": [
