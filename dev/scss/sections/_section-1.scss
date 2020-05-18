@@ -3,27 +3,68 @@
 ============= */
 #section-1 {
     background-image: url('../img/section-1/hero1.jpg');
-    background-position: -250px 0;
+    background-position: -250px 0px;
     background-size: cover;
-    display: grid;
-    grid-template-areas: ". content .";
-    grid-template-columns: 15px auto 15px;
     height: 600px;
 
     @include md {
         background-position: -100px 0;
+        height: 700px;
+    }
+    @include lg {
+        height: 800px;
+        background-position: 0px 0;
     }
 
     #section-1-container {
-        grid-area: content;
+        padding: 0 15px;
         text-align: center;
 
         >h1 {
             padding-top: 100px;
+            padding-bottom: 5px;
+            @include lg{
+                padding-top: 150px;
+                padding-bottom: 25px;
+            }
         }
 
         @include md {
             margin: 0 120px;
+        }
+        @include lg{
+            padding: 0 195px;
+        }
+        
+    }
+    #start{
+        display: flex;
+        margin-top: 180px;
+        justify-content: center;
+        @include md{
+            margin-top: 220px;
+        }
+        @include lg{
+            margin-top: 180px;
+        }
+        >h3{
+            width: 79px;
+            height: 79px;
+            border: 3px solid white;
+            border-radius: 123px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include md{
+                width: 122px;
+                height: 122px;
+            }
+            @include lg{
+                width: 170px;
+                height: 170px;
+            }
         }
     }
 }

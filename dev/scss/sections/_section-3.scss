@@ -1,46 +1,50 @@
 /* =============
     section-3
 ============= */
-#section-3 {
-	display: grid;
-	grid-template-areas: ". content ."
-		". img .";
-	grid-template-columns: 15px auto 15px;
-	width: 100%;
-}
-
 #section-3-container {
-	grid-area: content;
-
 	h1 {
 		text-align: center;
 	}
 
 	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		li {
 			background-color: $gray;
-			margin-bottom: 20px;
+			margin: 15px;
+			@include md{
+				margin: 25px;
+				width: 300px;
+			}
+		
+			@include lg{
+				width: 360px;
+			}
 
 			>h1 {
 				padding-top: 20px;
+				@include lg{
+					padding-top: 30px;
+				}
 			}
 
 			p {
-				padding: 20px;
+				padding: 10px 20px 20px 20px;
+				@include lg{
+					padding: 30px;
+				}
 			}
 
 			h5 {
 				padding: 0 0 20px 20px;
+				@include lg{
+					padding: 0 0 35px 30px;
+				}
 			}
+			
 		}
 
-		@include md {
-			display: grid;
-			grid-gap: 15px;
-			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-			grid-template-rows: repeat(2, 1fr);
-			margin: 0 30px;
-		}
 	}
 
 	#card1-img {
@@ -49,6 +53,14 @@
 		background-size: cover;
 		grid-area: img;
 		height: 200px;
+		@include md{
+			width: 300px;
+		}
+		@include lg{
+			height: 240px;
+			width: 360px;
+		}
+		
 	}
 
 	#card2-img {
@@ -57,6 +69,13 @@
 		background-size: cover;
 		grid-area: img;
 		height: 200px;
+		@include md{
+			width: 300px;
+		}
+		@include lg{
+			height: 240px;
+			width: 360px;
+		}
 	}
 
 	#card3-img {
@@ -65,5 +84,12 @@
 		background-size: cover;
 		grid-area: img;
 		height: 200px;
+		@include md{
+			width: 300px;
+		}
+		@include lg{
+			height: 240px;
+			width: 360px;
+		}
 	}
 }

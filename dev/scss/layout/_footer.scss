@@ -4,10 +4,18 @@
 footer {
     background-color: $black;
     color: white;
+    margin-top: 20px;
     padding: 45px 0 50px;
     text-align: center;
 
     #footer-content {
+        @include lg{
+            display: grid;
+            grid-template-columns: 15% auto;
+            grid-template-areas:
+            "icon text";
+            padding: 0 30px;
+        }
         ul {
             align-items: center;
             display: flex;
@@ -18,11 +26,18 @@ footer {
                 padding: 0 280px;
             }
 
+            @include lg{
+                padding: 0 0px;
+                justify-content: left;
+                justify-content: space-between;
+                grid-area: icon;
+            }
+
             li {
 
                 a:link,
                 a:visited {
-                    color: $gray;
+                    color: $darkgray;
                     font-size: rem-calc(30);
                     transition: 0.25s;
                 }
@@ -33,5 +48,13 @@ footer {
                 }
             }
         }
+        >h1{
+            padding-top: 20px;
+            @include lg{
+                text-align: right;
+                grid-area: text;
+            }
+        }
     }
+
 }
