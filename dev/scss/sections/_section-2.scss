@@ -2,30 +2,32 @@
     section-2
 ============= */
 #section-2 {
-    @include xl{
-        display: grid;
-        grid-template-columns: auto 1200px auto;
-        grid-template-areas: ". container .";
+    @include xl {
         background-color: $gray;
+        display: grid;
+        grid-template-areas: ". container .";
+        grid-template-columns: auto 1200px auto;
     }
-    
-    #section-2-container{
+
+    #section-2-container {
         @include md {
             display: grid;
             grid-template-areas: "content img";
             grid-template-columns: auto 35%;
         }
+
         @include lg {
             display: grid;
             grid-template-areas: "img content";
             grid-template-columns: auto 50%;
         }
+
         @include xl {
             grid-area: container;
             width: 1200px;
         }
-        
     }
+
     #section-2-content {
         background-color: $gray;
         grid-area: content;
@@ -34,30 +36,33 @@
         @include md {
             padding: 0 30px 0px 45px;
         }
-        @include lg{
+
+        @include lg {
             display: grid;
             grid-template-areas: ". article .";
             grid-template-columns: auto 340px auto;
         }
-        >article{
+
+        >article {
             @include lg {
+                align-self: center;
                 grid-area: article;
                 width: 340px;
-                align-self: center;
             }
         }
 
         h1 {
-            text-align: center;
             padding-bottom: 5px;
+            text-align: center;
 
             @include md {
                 padding-bottom: 10px;
                 text-align: left;
             }
+
             @include lg {
-                padding-top: 0;
                 padding-bottom: 10px;
+                padding-top: 0;
                 text-align: left;
             }
         }
@@ -73,6 +78,7 @@
         @include md {
             height: 250px;
         }
+
         @include lg {
             height: 600px;
         }

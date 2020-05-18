@@ -11,9 +11,10 @@
         background-position: -100px 0;
         height: 700px;
     }
+
     @include lg {
-        height: 800px;
         background-position: 0px 0;
+        height: 800px;
     }
 
     #section-1-container {
@@ -21,49 +22,54 @@
         text-align: center;
 
         >h1 {
-            padding-top: 100px;
             padding-bottom: 5px;
-            @include lg{
-                padding-top: 150px;
+            padding-top: 100px;
+
+            @include lg {
                 padding-bottom: 25px;
+                padding-top: 150px;
             }
         }
 
         @include md {
             margin: 0 120px;
         }
-        @include lg{
+
+        @include lg {
             padding: 0 195px;
         }
-        
     }
-    #start{
+
+    #start {
         display: flex;
-        margin-top: 180px;
         justify-content: center;
-        @include md{
+        margin-top: 180px;
+
+        @include md {
             margin-top: 220px;
         }
-        @include lg{
+
+        @include lg {
             margin-top: 180px;
         }
-        >h3{
-            width: 79px;
-            height: 79px;
+
+        >h3 {
+            align-items: center;
             border: 3px solid white;
             border-radius: 123px;
-
             display: flex;
-            align-items: center;
+            height: 79px;
             justify-content: center;
+            width: 79px;
 
-            @include md{
-                width: 122px;
+            @include md {
                 height: 122px;
+                width: 122px;
             }
-            @include lg{
-                width: 170px;
+
+            @include lg {
                 height: 170px;
+                width: 170px;
             }
         }
     }

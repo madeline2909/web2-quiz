@@ -391,7 +391,8 @@ p {
   padding: 0;
 }
 
-body p, body h5 {
+body p,
+body h5 {
   font-family: "Lato", sans-serif;
 }
 body h1 {
@@ -402,9 +403,9 @@ body h1 {
   font-family: "Comfortaa", cursive;
 }
 #section-1 h1 {
+  color: #1A4B58;
   font-family: "Comfortaa", cursive;
   font-size: 1.5rem;
-  color: #1A4B58;
 }
 @media (min-width: 768px) {
   #section-1 h1 {
@@ -417,9 +418,9 @@ body h1 {
   }
 }
 #section-1 h2 {
+  color: #338595;
   font-size: 1rem;
   line-height: 1.125rem;
-  color: #338595;
 }
 @media (min-width: 768px) {
   #section-1 h2 {
@@ -457,9 +458,9 @@ body h1 {
   }
 }
 #section-2 p {
-  text-align: justify;
   font-size: 1rem;
   line-height: 1.3125rem;
+  text-align: justify;
 }
 @media (min-width: 992px) {
   #section-2 p {
@@ -486,12 +487,14 @@ body h1 {
     line-height: 2.1875rem;
   }
 }
-#section-3-container ul p, #section-3-container ul h5 {
+#section-3-container ul p,
+#section-3-container ul h5 {
   font-size: 1rem;
   line-height: 1.1875rem;
 }
 @media (min-width: 992px) {
-  #section-3-container ul p, #section-3-container ul h5 {
+  #section-3-container ul p,
+#section-3-container ul h5 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
@@ -544,8 +547,8 @@ footer {
 @media (min-width: 992px) {
   footer #footer-content {
     display: grid;
-    grid-template-columns: 15% auto;
     grid-template-areas: "icon text";
+    grid-template-columns: 15% auto;
     padding: 0 30px;
   }
 }
@@ -562,10 +565,9 @@ footer #footer-content ul {
 }
 @media (min-width: 992px) {
   footer #footer-content ul {
-    padding: 0 0px;
-    justify-content: left;
-    justify-content: space-between;
     grid-area: icon;
+    justify-content: space-between;
+    padding: 0 0px;
   }
 }
 footer #footer-content ul li a:link,
@@ -583,8 +585,8 @@ footer #footer-content > h1 {
 }
 @media (min-width: 992px) {
   footer #footer-content > h1 {
-    text-align: right;
     grid-area: text;
+    text-align: right;
   }
 }
 
@@ -605,8 +607,8 @@ footer #footer-content > h1 {
 }
 @media (min-width: 992px) {
   #section-1 {
-    height: 800px;
     background-position: 0px 0;
+    height: 800px;
   }
 }
 #section-1 #section-1-container {
@@ -614,13 +616,13 @@ footer #footer-content > h1 {
   text-align: center;
 }
 #section-1 #section-1-container > h1 {
-  padding-top: 100px;
   padding-bottom: 5px;
+  padding-top: 100px;
 }
 @media (min-width: 992px) {
   #section-1 #section-1-container > h1 {
-    padding-top: 150px;
     padding-bottom: 25px;
+    padding-top: 150px;
   }
 }
 @media (min-width: 768px) {
@@ -635,8 +637,8 @@ footer #footer-content > h1 {
 }
 #section-1 #start {
   display: flex;
-  margin-top: 180px;
   justify-content: center;
+  margin-top: 180px;
 }
 @media (min-width: 768px) {
   #section-1 #start {
@@ -649,24 +651,24 @@ footer #footer-content > h1 {
   }
 }
 #section-1 #start > h3 {
-  width: 79px;
-  height: 79px;
+  align-items: center;
   border: 3px solid white;
   border-radius: 123px;
   display: flex;
-  align-items: center;
+  height: 79px;
   justify-content: center;
+  width: 79px;
 }
 @media (min-width: 768px) {
   #section-1 #start > h3 {
-    width: 122px;
     height: 122px;
+    width: 122px;
   }
 }
 @media (min-width: 992px) {
   #section-1 #start > h3 {
-    width: 170px;
     height: 170px;
+    width: 170px;
   }
 }
 
@@ -675,10 +677,10 @@ footer #footer-content > h1 {
 ============= */
 @media (min-width: 1200px) {
   #section-2 {
-    display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". container .";
     background-color: #EEEEEE;
+    display: grid;
+    grid-template-areas: ". container .";
+    grid-template-columns: auto 1200px auto;
   }
 }
 @media (min-width: 768px) {
@@ -720,14 +722,14 @@ footer #footer-content > h1 {
 }
 @media (min-width: 992px) {
   #section-2 #section-2-content > article {
+    align-self: center;
     grid-area: article;
     width: 340px;
-    align-self: center;
   }
 }
 #section-2 #section-2-content h1 {
-  text-align: center;
   padding-bottom: 5px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #section-2 #section-2-content h1 {
@@ -737,8 +739,8 @@ footer #footer-content > h1 {
 }
 @media (min-width: 992px) {
   #section-2 #section-2-content h1 {
-    padding-top: 0;
     padding-bottom: 10px;
+    padding-top: 0;
     text-align: left;
   }
 }

@@ -10,41 +10,44 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+
 		li {
 			background-color: $gray;
 			margin: 15px;
-			@include md{
+
+			@include md {
 				margin: 25px;
 				width: 300px;
 			}
-		
-			@include lg{
+
+			@include lg {
 				width: 360px;
 			}
 
 			>h1 {
 				padding-top: 20px;
-				@include lg{
+
+				@include lg {
 					padding-top: 30px;
 				}
 			}
 
 			p {
 				padding: 10px 20px 20px 20px;
-				@include lg{
+
+				@include lg {
 					padding: 30px;
 				}
 			}
 
 			h5 {
 				padding: 0 0 20px 20px;
-				@include lg{
+
+				@include lg {
 					padding: 0 0 35px 30px;
 				}
 			}
-			
 		}
-
 	}
 
 	#card1-img {
@@ -53,14 +56,15 @@
 		background-size: cover;
 		grid-area: img;
 		height: 200px;
-		@include md{
+
+		@include md {
 			width: 300px;
 		}
-		@include lg{
+
+		@include lg {
 			height: 240px;
 			width: 360px;
 		}
-		
 	}
 
 	#card2-img {
@@ -69,10 +73,12 @@
 		background-size: cover;
 		grid-area: img;
 		height: 200px;
-		@include md{
+
+		@include md {
 			width: 300px;
 		}
-		@include lg{
+
+		@include lg {
 			height: 240px;
 			width: 360px;
 		}
@@ -84,10 +90,12 @@
 		background-size: cover;
 		grid-area: img;
 		height: 200px;
-		@include md{
+
+		@include md {
 			width: 300px;
 		}
-		@include lg{
+
+		@include lg {
 			height: 240px;
 			width: 360px;
 		}

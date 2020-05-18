@@ -11,98 +11,125 @@ p {
 	margin: 0;
 	padding: 0;
 }
+
 body {
-	p,h5 {
+
+	p,
+	h5 {
 		font-family: 'Lato', sans-serif;
 	}
+
 	h1 {
 		font-family: 'Montserrat', sans-serif;
 	}
 }
+
 #section-1 {
 	font-family: 'Comfortaa', cursive;
+
 	h1 {
+		color: $darkblue;
 		font-family: 'Comfortaa', cursive;
 		font-size: rem-calc(24);
-		color: $darkblue;
-		@include md{
+
+		@include md {
 			font-size: rem-calc(38);
 		}
-		@include lg{
+
+		@include lg {
 			font-size: rem-calc(60);
 		}
 	}
-	h2{
+
+	h2 {
+		color: $lightblue;
 		font-size: rem-calc(16);
 		line-height: rem-calc(18);
-		color: $lightblue;
-		@include md{
+
+		@include md {
 			font-size: rem-calc(25);
 			line-height: rem-calc(29);
 		}
-		@include lg{
+
+		@include lg {
 			font-size: rem-calc(32);
 			line-height: rem-calc(34);
 		}
 	}
-	h3{
+
+	h3 {
 		color: white;
 		font-size: rem-calc(19);
-		@include md{
+
+		@include md {
 			font-size: rem-calc(23);
 		}
-		@include lg{
+
+		@include lg {
 			font-size: rem-calc(33);
 		}
 	}
 }
-#section-2{
-	h1{
+
+#section-2 {
+	h1 {
 		font-size: rem-calc(35);
-		@include lg{
+
+		@include lg {
 			font-size: rem-calc(45);
 		}
 	}
-	p{
-		text-align: justify;
+
+	p {
 		font-size: rem-calc(16);
 		line-height: rem-calc(21);
-		@include lg{
+		text-align: justify;
+
+		@include lg {
 			font-size: rem-calc(20);
 			line-height: rem-calc(29);
 		}
 	}
 }
-#section-3-container{
-	>h1{
+
+#section-3-container {
+	>h1 {
 		font-size: rem-calc(35);
-		@include lg{
+
+		@include lg {
 			font-size: rem-calc(45);
 		}
 	}
-	ul{
-		h1{
+
+	ul {
+		h1 {
 			font-size: rem-calc(24);
 			line-height: rem-calc(29);
-			@include lg{
+
+			@include lg {
 				font-size: rem-calc(29);
 				line-height: rem-calc(35);
 			}
 		}
-		p,h5 {
+
+		p,
+		h5 {
 			font-size: rem-calc(16);
 			line-height: rem-calc(19);
-			@include lg{
+
+			@include lg {
 				font-size: rem-calc(20);
 				line-height: rem-calc(24);
 			}
 		}
 	}
 }
-footer{
-	h1{
+
+footer {
+	h1 {
 		font-size: rem-calc(11);
-		.orange-text{
+
+		.orange-text {
 			color: $orange;
 		}
 	}
